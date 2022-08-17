@@ -21,6 +21,7 @@ public class OnTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (CanTrigger(other.gameObject))
+            print("Entered");
             OnEnter?.Invoke(other);
     }
 
